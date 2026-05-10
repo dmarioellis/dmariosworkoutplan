@@ -1109,7 +1109,7 @@ document.addEventListener('touchend',e=>{
   if (!document.getElementById('dayView').classList.contains('active')) return;
   const dx=e.changedTouches[0].clientX-touchStartX;
   if (Math.abs(dx)>60) navDay(dx<0?1:-1);
-},{passive:true});
+},{passive:true}); 
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
 buildHome();
